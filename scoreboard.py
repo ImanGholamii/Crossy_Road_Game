@@ -12,3 +12,7 @@ class Scoreboard(Turtle):
         self.color("#66CDAA")
         self.teleport(-300, 260)
         self.write(f"Level: {self.point}", font=FONT)
+
+    def game_over(self):
+        self.setpos(-80, 0)
+        self.write(f"Game Over", font=FONT)
