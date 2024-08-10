@@ -26,3 +26,7 @@ class CarManager:
         for car in self.cars:
             car.forward(STARTING_MOVE_DISTANCE)
 
+    def reset(self):
+        for car in self.cars:
+            car.hideturtle()
+        self.cars.clear()

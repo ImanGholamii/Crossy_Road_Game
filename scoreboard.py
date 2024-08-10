@@ -21,3 +21,9 @@ class Scoreboard(Turtle):
         self.clear()
         self.level += 1
         self.write(f"Level: {self.level}", font=FONT)
+
+    def reset(self):
+        self.clear()
+        self.level = 0
+        self.goto(-300, 260)
+        self.write(f"Level: {self.level}", font=FONT)
