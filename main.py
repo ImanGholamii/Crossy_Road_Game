@@ -32,7 +32,8 @@ def play_game():
         if player.ycor() > 280:
             scoreboard.add_level()
             time.sleep(0.5)
-            player.goto(0, -280)
+            player.go_to_starting_position()
+            car_manager.increase_speed()
 
 
 def main():
@@ -49,6 +50,7 @@ def main():
         screen.onkey(player.move, "Up")
 
     screen.exitonclick()
+
 
 if __name__ == '__main__':
     main()
