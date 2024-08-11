@@ -12,6 +12,9 @@ class Player(Turtle):
         self.color("green")
         self.setheading(90)
         self.penup()
+        self.go_to_starting_position()
+
+    def go_to_starting_position(self):
         self.goto(STARTING_POSITION)
 
     def move(self):
@@ -19,5 +22,5 @@ class Player(Turtle):
 
     def reset(self):
         self.clear()
-        self.goto(STARTING_POSITION)
+        self.go_to_starting_position()
         self.showturtle()
